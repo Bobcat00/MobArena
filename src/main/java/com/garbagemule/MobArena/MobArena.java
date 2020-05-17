@@ -168,7 +168,7 @@ public class MobArena extends JavaPlugin
     }
 
     private void setupMetrics() {
-        Metrics metrics = new Metrics(this);
+        Metrics metrics = new Metrics(this, 2572);
         metrics.addCustomChart(new VaultChart(this));
         metrics.addCustomChart(new ArenaCountChart(this));
         metrics.addCustomChart(new ClassCountChart(this));
@@ -262,10 +262,6 @@ public class MobArena extends JavaPlugin
 
     public Throwable getLastFailureCause() {
         return lastFailureCause;
-    }
-
-    public File getPluginFile() {
-        return getFile();
     }
 
     @Override

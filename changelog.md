@@ -13,6 +13,11 @@ These changes will (most likely) be included in the next version.
 ## [Unreleased]
 - A new `ready` state is now available for arena sign templates. Signs are in this state when all players in the lobby have readied up, but the arena has not yet started due to a start delay timer. Check the wiki for details.
 - Arena signs now support dynamic list entry variables for 4 different player lists. As an example, `<notready-1>` results in the name of a player in the lobby who hasn't readied up yet. This is useful for visualizing who is holding up the lobby. Check the wiki for details.
+- Elytra are now supported chest pieces in class chests.
+- Boss names now support color codes.
+- The Root Target ability now uses potion effects (slowness, slow falling, and negative jump boost) instead of repeated teleports. This should make for a smoother root experience.
+- Config-files with missing `pet-items` nodes no longer errors. A missing `pet-items` node in `global-settings` is treated as empty, i.e. no pet items will be registered.
+- The `player-time-in-arena` setting has been fixed.
 
 ## [0.104.2] - 2020-01-03
 - The region overlap check now works across both arena and lobby regions, i.e. all four combinations of intersections between two regions (arena-arena, arena-lobby, lobby-arena, and lobby-lobby) are evaluated.

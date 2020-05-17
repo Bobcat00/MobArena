@@ -859,7 +859,6 @@ public class ArenaImpl implements Arena
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public void revivePlayer(Player p) {
         removePermissionAttachments(p);
         removePotionEffects(p);
@@ -1190,6 +1189,7 @@ public class ArenaImpl implements Arena
                 makeUnbreakable(stack);
             }
             switch (type) {
+                case "ELYTRA":
                 case "CHESTPLATE": chestplate = stack; break;
                 case "LEGGINGS":   leggings   = stack; break;
                 case "BOOTS":      boots      = stack; break;
